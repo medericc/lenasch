@@ -3,33 +3,33 @@ import { Analytics } from "@vercel/analytics/react";
 import Head from 'next/head';
 
 export const metadata = {
-  title: "Calendrier de Lucile",
-  description: "Le calendrier des matchs de Lucile.",
+  title: "Calendrier de Léna",
+  description: "Le calendrier des matchs de Léna.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Calendrier de Lucile",
-    description: "Le calendrier des matchs de Lucile.",
-    url: "https://lucile-schedule.vercel.app/",
-    siteName: "Lucile Schedule",
+    title: "Calendrier de Léna",
+    description: "Le calendrier des matchs de Léna.",
+    url: "https://lena-schedule.vercel.app/",
+    siteName: "Léna Schedule",
     images: [
       {
-        url: "https://lucile-schedule.vercel.app/preview.jpg",
+        url: "https://lena-schedule.vercel.app/preview.jpg",
         width: 1200,
         height: 630,
-        alt: "Lucile Schedule",
+        alt: "Léna Schedule",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calendrier de Lucile",
-    description: "Le calendrier des matchs de Lucile.",
-    images: ["https://lucile-schedule.vercel.app/preview.jpg"],
+    title: "Calendrier de Léna",
+    description: "Le calendrier des matchs de Léna.",
+    images: ["https://lena-schedule.vercel.app/preview.jpg"],
   },
 };
 
@@ -44,8 +44,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#ff6600" />
       </Head>
       <body className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
-        <header className="bg-gradient-to-r from-red-800 to-red-900 text-white p-8 text-4xl font-extrabold text-center shadow-md">
-          MATCH DE LUCILE
+        <header className="bg-gradient-to-r from-purple-800 to-purple-900 text-white p-8 text-4xl font-extrabold text-center shadow-md">
+          MATCH DE LÉNA
         </header>
         <main className="container mx-auto mt-4">{children}</main>
         <Analytics />

@@ -26,18 +26,18 @@ const translations = {
       "1. Ouvrez Google Calendar",
       "2. Cliquez sur la roue crantée en haut à droite → Paramètres",
       "3. Allez dans Importer et exporter",
-      "4. Sélectionnez le fichier téléchargé : lucile_matchs_2526.ics",
+      "4. Sélectionnez le fichier téléchargé : lena_2526.ics",
       "5. Importez-le dans le calendrier de votre choix",
-      "🎉 Tous les matchs de Lucile sont maintenant dans votre agenda !",
+      "🎉 Tous les matchs de Léna sont maintenant dans votre agenda !",
     ],
     iosInstructions: [
       "✅ Le fichier a été téléchargé !",
       "Si pas déjà importer :",
       "1. Ouvrez l'application Fichiers",
       "2. Rendez-vous dans le dossier Téléchargements",
-      "3. Appuyez sur le fichier lucile_matchs_2526.ics",
+      "3. Appuyez sur le fichier lena_2526.ics",
       "4. Choisissez Ajouter à Calendrier si proposé",
-      "📅 Tous les matchs de Lucile sont maintenant ajoutés à votre calendrier !",
+      "📅 Tous les matchs de Léna sont maintenant ajoutés à votre calendrier !",
     ],
     close: "Fermer",
   }
@@ -108,7 +108,7 @@ export default function PhoenixSchedulePage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'lucile_matchs_2526.ics';
+    a.download = 'lena_2526.ics';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -230,11 +230,7 @@ export default function PhoenixSchedulePage() {
               <div className="flex flex-col items-center text-sm text-gray-700 mt-1">
              <img
   src={
-    match.id.startsWith("c")
-      ? "/mc.png"
-      : match.id.startsWith("a")
-      ? "/ewl.png"
-      : "/lfb.png"
+     "/lfb.png"
   }
   alt="Logo Compétition"
   className="w-7 h-6 mb-2"
@@ -257,7 +253,7 @@ export default function PhoenixSchedulePage() {
                 </div>
               </div>
             </CardContent>
-            <CardFooter className="bg-red-800 p-2 rounded-b-xl flex justify-center">
+            <CardFooter className="bg-purple-800 p-2 rounded-b-xl flex justify-center">
   <a
     href={match.link} // Assure-toi que match.link contient une URL valide
     target="_blank"
@@ -278,7 +274,7 @@ export default function PhoenixSchedulePage() {
     {/* Floating Button */}
     <button
         onClick={() => setIsModalOpen(true)}
-        className="fixed bottom-6 right-6 bg-red-700 hover:bg-red-800 text-white rounded-full p-4 shadow-lg z-50"
+        className="fixed bottom-6 right-6 bg-purple-700 hover:bg-purple-800 text-white rounded-full p-4 shadow-lg z-50"
         title="Ajouter au calendrier"
       >
         <CalendarPlus className="w-6 h-6" />
@@ -329,7 +325,7 @@ export default function PhoenixSchedulePage() {
               setIsModalOpen(false);
               setShowGoogleInstructions(false);
             }}
-            className="mt-6 text-sm text-red-700 font-semibold hover:underline"
+            className="mt-6 text-sm text-purple-700 font-semibold hover:underline"
           >
             {t.close}
           </button>
@@ -346,7 +342,7 @@ export default function PhoenixSchedulePage() {
               setIsModalOpen(false);
               setShowiOSInstructions(false);
             }}
-            className="mt-6 text-sm text-red-700 font-semibold hover:underline"
+            className="mt-6 text-sm text-purple-700 font-semibold hover:underline"
           >
             {t.close}
           </button>
