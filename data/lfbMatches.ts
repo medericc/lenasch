@@ -5,7 +5,7 @@ export const lfbMatches: Match[] = [
     id: "j1",
     date: new Date("2025-09-27T20:00:00"),
     opponent: "Attente",
-    opponentLogo: "",
+    opponentLogo: "/osp.png",
     link: "",
   },
   {
@@ -54,7 +54,7 @@ export const lfbMatches: Match[] = [
     id: "j8",
     date: new Date("2025-11-22T17:00:00"),
     opponent: "Pôle France",
-    opponentLogo: "/polefrance.webp",
+    opponentLogo: "/pole.webp",
     link: "",
   },
   {
@@ -68,14 +68,14 @@ export const lfbMatches: Match[] = [
     id: "j10",
     date: new Date("2025-12-06T20:00:00"),
     opponent: "Attente",
-    opponentLogo: "",
+    opponentLogo: "/osp.png",
     link: "",
   },
    {
     id: "j11",
     date: new Date("2025-12-13T20:00:00"),
     opponent: "Saint-Amand",
-    opponentLogo: "",
+    opponentLogo: "/sa.webp",
     link: "",
   },
   {
@@ -96,7 +96,7 @@ export const lfbMatches: Match[] = [
     id: "j14",
     date: new Date("2026-01-10T20:00:00"),
     opponent: "Attente",
-    opponentLogo: "",
+    opponentLogo: "/osp.png",
     link: "",
   },
   {
@@ -146,7 +146,7 @@ export const lfbMatches: Match[] = [
     id: "j21",
     date: new Date("2026-02-28T18:00:00"),
     opponent: "Pôle France",
-    opponentLogo: "/polefrance.webp",
+    opponentLogo: "/pole.webp",
     link: "",
   },
   {
@@ -160,7 +160,7 @@ export const lfbMatches: Match[] = [
     id: "j23",
     date: new Date("2026-03-21T20:00:00"),
     opponent: "Attente",
-    opponentLogo: "",
+    opponentLogo: "/osp.png",
     link: "",
   },
   {

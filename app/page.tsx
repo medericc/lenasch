@@ -229,12 +229,11 @@ export default function PhoenixSchedulePage() {
               {/* Time box */}
               <div className="flex flex-col items-center text-sm text-gray-700 mt-1">
              <img
-  src={
-     "/lfb.png"
-  }
-  alt="Logo Compétition"
-  className="w-7 h-6 mb-2"
+  src="https://flagcdn.com/w40/fr.png"
+  alt="FR"
+  className="w-5 h-4 mb-1"
 />
+
 
 
                 <div
