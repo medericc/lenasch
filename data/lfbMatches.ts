@@ -87,7 +87,7 @@ export const lfbMatches: Match[] = [
   },
   {
     id: "j13",
-    date: new Date("2026-02-20T20:00:00"),
+    date: new Date("2025-12-20T20:00:00"),
     opponent: "Monaco",
     opponentLogo: "/monaco.webp",
     link: "",
